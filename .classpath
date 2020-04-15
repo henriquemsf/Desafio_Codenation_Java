@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/rique/Desktop/rest-assured-4.3.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/rique/Desktop/json-20190722.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rique/Desktop/json-simple-3.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rique/Desktop/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rique/Desktop/httpclient-4.3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rique/Downloads/httpmime-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rique/Downloads/json-20190722 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/rique/Desktop/apache-httpcomponents-httpcore.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
