@@ -32,6 +32,8 @@ Nota recebida: 100
 
 - Criar métodos gerais para a atualização e recebimento de valores das chaves do json, no lugar dos métodos particulares (GetN e GetCypher, por exemplo), para garantir adaptabilidade ao código
 
+- Atualizar o projeto com uma orientação maior a objetos em suas classes
+
 
 
 
