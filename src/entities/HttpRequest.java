@@ -15,18 +15,15 @@ public class HttpRequest {
 		String line;
 		StringBuffer responseContent = new StringBuffer();
 		
+		//Realizar uma conexao com o site e obter o codigo de resposta do mesmo
 		URL url = new URL(site); 
-		
 		HttpURLConnection conn = (HttpURLConnection)url.openConnection(); 
-		
-		String method = "GET";
-				
+		String method = "GET";		
 		conn.setRequestMethod(method);
-		
 		conn.connect();
-		
 		int responsecode = conn.getResponseCode();
 		
+		//Ler a mensagem ou erro do site
 		if (responsecode != 200) {
 			reader = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
 			while((line = reader.readLine()) != null){
@@ -41,8 +38,10 @@ public class HttpRequest {
 			conn.disconnect();	    
 		}
 		
+		//Criar um objeto Json com a resposta do site
 		JSONObject jsonObject = new JSONObject(responseContent.toString());
 		
+		//Criar um arquivo .json
 		FileWriter file = new FileWriter("answer.json");
 		file.write(jsonObject.toString());
 		file.close();  

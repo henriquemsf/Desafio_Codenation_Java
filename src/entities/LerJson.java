@@ -10,6 +10,7 @@ import org.json.simple.parser.ParseException;
 
 public class LerJson {
 	
+	//Retornar o numero de casas a serem subtraidas a partir da chave "numero_casas"
 	public static final String GetN() throws FileNotFoundException, IOException, ParseException {		
 	    JSONParser jsonParser = new JSONParser();	    
 	    try (FileReader reader = new FileReader("answer.json"))
@@ -20,6 +21,7 @@ public class LerJson {
 	    }
 	}
 	
+	//Retornar a cifra a partir da chave "cifrado"
 	public static final String GetCypher() throws FileNotFoundException, IOException, ParseException {		
 	    JSONParser jsonParser = new JSONParser();	    
 	    try (FileReader reader = new FileReader("answer.json"))
@@ -31,6 +33,7 @@ public class LerJson {
 	    }
 	}
 	
+	//Atualizar a chave "decifrado" com a traducao da cifra
 	@SuppressWarnings("unchecked")
 	public static final void SetTranslation(String traducao) throws FileNotFoundException, IOException, ParseException{
 		JSONParser jsonParser = new JSONParser();	    
@@ -45,7 +48,8 @@ public class LerJson {
 			file.close();
 	    }
 	}
-
+	
+	//Atualizar a chave "resumo_criptografico" com a criptografia Sha1
 	@SuppressWarnings("unchecked")
 	public static final void SetSha1(String criptografado) throws FileNotFoundException, IOException, ParseException{
 		JSONParser jsonParser = new JSONParser();	    

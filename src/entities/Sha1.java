@@ -5,6 +5,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class Sha1 {
 	
+	//Codigo retirado do site http://www.sha1-online.com/
 	public static final String sha1(String traducao) throws NoSuchAlgorithmException {
         MessageDigest mDigest = MessageDigest.getInstance("SHA1");
         byte[] result = mDigest.digest(traducao.getBytes());
