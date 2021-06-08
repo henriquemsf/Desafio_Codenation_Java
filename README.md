@@ -20,12 +20,6 @@ O desafio de aceleração em Java consiste em desenvolver um código com o objet
 
 6- Enviar o arquivo para outro site, com o mesmo token de acesso
 
-## Resultado
-
-Ao enviar o arquivo, cada participante recebia um score, sendo que a nota máxima e a nota de corte do desafio eram iguais a 100
-
-Nota recebida: 100
-
 ## Oportunidades de melhoria
 
 - Somente a requisição GET foi feita diretamente pelo código desenvolvido, sendo que o POST do json foi realizado via Postman
